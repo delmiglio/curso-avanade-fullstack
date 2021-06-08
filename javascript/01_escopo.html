@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Escopo Javascript</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+
+            // Executado de forma global
+            var a = "guilherme";
+
+            // Executado imediatamente na linha
+            let b = "oliveira";
+
+            // Constante que podemos alterar propriedades
+            const car = {
+                model: "vectra",
+                manufacturer: "chevrolet"
+            };
+
+            car.model = "Siena";
+
+            console.log("car model: " + car.model);
+
+            // Congela o Objeto e não deixa mudar as propriedades 
+            Object.freeze(car);
+
+
+        </script>
+    </body>
+</html>
